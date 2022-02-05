@@ -1,0 +1,125 @@
+.product {
+    &-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        padding: 5px;
+    }
+
+
+    &-label {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        width: 20%;
+    }
+
+    &-input {
+        width: 50%;
+        height: 1.5rem;
+
+    }
+
+    &-button-submit {
+        width: 122px;
+        height: 52px;
+        border: none;
+        background-color: #0388fc;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing: 0.2rem;
+        cursor: pointer;
+        margin-left: 56px;
+    }
+
+    &-button-submit:hover {
+        width: 124px;
+        height: 54px;
+        background-color: #07467ec2;
+        transition: 0.2s;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 10px auto;
+
+        &-label {
+            width: 30%;
+        }
+
+        &-button-delete {
+            display: inline-block;
+            height: 30px;
+            border: none;
+            background-color: #fc0324;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            letter-spacing: 0.2rem;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        &-button-submit:hover {
+            width: 124px;
+            height: 54px;
+            background-color: #b6041c;
+            transition: 0.2s;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .product {
+        &-container {
+            flex-direction: column
+        }
+
+        &-input {
+            width: 100%;
+            height: 1.5rem;
+        }
+
+        &-label {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        &-button-submit {
+            margin: 0 auto;
+        }
+    }
+
+}
